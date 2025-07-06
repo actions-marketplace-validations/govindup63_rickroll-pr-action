@@ -1,0 +1,13 @@
+name: "Rickroll PR Action"
+description: "Posts a professional-looking checklist comment on pull requests (with a twist)"
+author: "github.com/govindup63"
+inputs:
+  repo-token:
+    description: "GitHub token to post comments"
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  icon: "alert-circle"
+  color: "red"
